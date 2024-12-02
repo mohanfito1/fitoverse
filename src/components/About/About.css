@@ -1,0 +1,274 @@
+/* General Body Styling */
+.about-page {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.about-header {
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    color: rgb(255, 255, 255);
+    padding: 60px 20px; /* Padding for spacing around content */
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Space below header */
+    background-size: 150% 100%; /* Shrinks the gradient on both sides */
+    background-position: center; /* Center the gradient */
+    padding: 100px 20px;
+}
+
+.about-header h1 {
+    font-size: 3.5rem; /* Adjust font size to fit in the new height */
+    margin-bottom: 15px;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-subtext {
+    font-size: 1.4rem; /* Adjust font size of subtext */
+    opacity: 0.9;
+}
+
+/* Section Headers */
+.section-header {
+    margin-bottom: 20px; /* Added space between section header and content */
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem; /* Reduced font size */
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Company Overview Section */
+.company-overview p {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    color: #34495e;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6; /* Slightly reduced line-height */
+    text-align: center;
+}
+
+/* Mission & Values Section */
+.mission-values {
+    background: #ffffff;
+    padding: 60px 20px; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 50px; /* Added margin to separate sections */
+}
+
+.mission-values h3 {
+    font-size: 1.6rem; /* Smaller font size */
+    margin-top: 20px; /* Reduced margin */
+    color: #2c3e50;
+}
+
+.mission-values ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Reduced gap */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Reduced margin */
+}
+
+.mission-values li {
+    background: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 10px;
+    width: 220px; /* Reduced width */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.mission-values li:hover {
+    transform: translateY(-5px); /* Reduced hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mission-values li strong {
+    color: #3498db;
+}
+
+/* Services Section */
+.our-services {
+    background: #ffffff;
+    padding: 60px 20px; /* Reduced padding */
+    text-align: center;
+    margin-bottom: 50px; /* Added margin to separate sections */
+}
+
+.services-description {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    color: #7f8c8d;
+    margin: 10px 0; /* Reduced margin */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Adjusted grid size */
+    gap: 30px; /* Reduced gap */
+    margin-top: 30px; /* Reduced margin-top */
+}
+
+.service-item {
+    background: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Reduced hover effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3 {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    color: #2c3e50;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.service-item p {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #7f8c8d;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+    background: linear-gradient(to right, #f39c12, #e67e22);
+    padding: 60px 20px; /* Reduced padding */
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px; /* Added margin to separate sections */
+}
+
+.call-to-action h2 {
+    font-size: 2.8rem; /* Slightly smaller font size */
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.call-to-action p {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    margin-bottom: 30px; /* Reduced margin */
+}
+
+.call-to-action .cta-button {
+    padding: 12px 35px; /* Slightly smaller padding */
+    background: white;
+    color: #e67e22;
+    font-size: 1.1rem; /* Slightly smaller font size */
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background: #e67e22;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Contact Us Section */
+.contact-us {
+    background: #ffffff;
+    padding: 40px 20px; /* Reduced padding */
+    text-align: center;
+    margin-bottom: 40px; /* Added margin to separate sections */
+}
+
+.contact-us h2 {
+    font-size: 2.5rem; /* Slightly smaller font size */
+    margin-bottom: 20px; /* Reduced margin */
+    color: #2c3e50;
+}
+
+.contact-us p {
+    font-size: 1.1rem; /* Slightly smaller font size */
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px; /* Reduced padding */
+    font-size: 1.1rem; /* Slightly smaller font size */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.5rem; /* Reduced font size for mobile */
+    }
+
+    .section-header h2 {
+        font-size: 2rem; /* Reduced font size for mobile */
+    }
+
+    .mission-values h3 {
+        font-size: 1.4rem; /* Reduced font size for mobile */
+    }
+
+    .service-item h3 {
+        font-size: 1.3rem; /* Reduced font size for mobile */
+    }
+
+    .service-item p {
+        font-size: 1rem; /* Reduced font size for mobile */
+    }
+
+    .call-to-action h2 {
+        font-size: 2.2rem; /* Reduced font size for mobile */
+    }
+
+    .call-to-action p {
+        font-size: 1.1rem; /* Reduced font size for mobile */
+    }
+
+    .contact-us h2 {
+        font-size: 2.2rem; /* Reduced font size for mobile */
+    }
+
+    .contact-us p {
+        font-size: 1.1rem; /* Reduced font size for mobile */
+    }
+
+    .contact-button {
+        font-size: 1rem; /* Reduced font size for mobile */
+    }
+}

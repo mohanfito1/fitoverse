@@ -1,0 +1,213 @@
+/* Global Styles */
+/* Remove or reduce the padding for a seamless effect */
+body {
+    font-family: 'Suisse Int''l', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    padding-top: 60px; /* Set to 0 or minimal */
+}
+
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 0; /* Ensure no extra space at the top */
+}
+  
+  .hero-section .overlay {
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .hero-text {
+    position: absolute; /* Position the text */
+    top: 335px; /* Position 20px from the top */
+    left: 460px; /* Position 20px from the left */
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds text shadow for better visibility */
+    z-index: 1; /* Ensure text is above other elements */
+  }
+  
+  .hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Our Services Section */
+  .services {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .services h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-item {
+    flex: 1;
+    max-width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+  }
+  
+  /* Global Presence Section */
+  .global-presence {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .global-presence h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .global-presence p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Core Information Section */
+  .core-info {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .core-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .core-info p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .core-info ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: left;
+  }
+  
+  .core-info li {
+    font-size: 16px;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .projects h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .projects-stats p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0b98f5;
+  }
+  
+  .cta-button:focus {
+    outline: none;
+  }
+  
+  .cta-button:active {
+    transform: scale(0.95);
+  }
+  

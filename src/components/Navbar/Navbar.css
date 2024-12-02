@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed; /* Keeps it fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #ffffff; /* Gradient colors */
+    background-size: 300% 300%; /* Ensures smooth animation */
+    animation: gradientAnimation 5s ease infinite; /* Controls the animation speed and loop */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out; /* Smooth transition for scrolling effect */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navbar content layout */
+.navbar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side of the navbar */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align left */
+    position: relative;
+    flex-grow: 5;  /* Ensure the left content takes full space */
+}
+
+.navbar-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: transparent; /* Set color to transparent to allow the gradient to show through */
+    display: flex;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    background: #000000; /* Gradient from green to purple to blue */
+    -webkit-background-clip: text; /* Apply the gradient to text */
+    background-clip: text; /* Apply the gradient to text */
+}
+
+/* Navbar logo style */
+.navbar-logo {
+    width: 35px;
+    height: 35px;
+    display: block; /* Ensure the image behaves like a block element */
+}
+
+/* Navbar logo container */
+.navbar-logo-container {
+    position: absolute;
+    left: 0;  /* Position logo at the leftmost */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar-right links */
+.navbar-right {
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: rgb(20, 18, 18);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.navbar-link:hover {
+    color: #000000;
+    transform: scale(1.25);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ensuring content below the navbar does not overlap */
+body {
+    margin-top: 60px; /* Adds margin equal to navbar height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-left {
+        flex-grow: 4;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-name {
+        font-size: 18px;
+    }
+}

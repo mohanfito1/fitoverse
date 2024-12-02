@@ -1,0 +1,182 @@
+/* General Styling */
+.projects-page {
+    font-family: 'Suisse Int''l', sans-serif;
+    padding: 20px;
+    background-color: #ffffff; /* Ensures the background is pure white */
+}
+
+/* Header styles */
+.projects-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Table styles */
+.projects-table {
+    margin-top: 10px; /* Reduced margin */
+    width: 80%; /* Reduced width */
+    max-width: 1200px; /* Added max width to make it more constrained */
+    overflow-x: auto;
+    margin-left: auto; /* Center align the table */
+    margin-right: auto; /* Center align the table */
+    border-collapse: collapse; /* Optional: to make table borders look cleaner */
+    background-color: #ffffff; /* Table background is set to pure white */
+}
+
+/* Table header and rows adjustments */
+.projects-table .table-header,
+.projects-table .table-body {
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.projects-table .table-column {
+    padding: 2px 12px; /* Reduced padding */
+}
+
+.projects-table .table-row {
+    padding: 2px 12px; /* Reduced row padding */
+}
+
+/* Table Header */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff; /* Light white background for table header */
+    color: rgb(16, 1, 1);
+    font-weight: bold;
+}
+
+.table-column {
+    cursor: pointer;
+    padding: 0px;
+    text-align: left;
+    flex: 1;
+}
+
+/* Table Body */
+.table-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Table Row */
+.table-row {
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff; /* Ensures table row background is pure white */
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: #f1f1f1;
+}
+
+.table-row.hovered {
+    background-color: #e0e0e0;
+}
+
+/* Hover image styles (Fixed position) */
+.hover-image-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    height: 170px;
+    animation: fade-in 0.5s ease;
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    animation: scale-up 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Project detail styles */
+.project-details {
+    background-color: #ffffff; /* Project details background set to white */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%; /* Occupy half of the screen */
+    height: 100%;
+    opacity: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project-details.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slide into view */
+}
+
+/* Left side dimming with overlay */
+.left-side-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%; /* Cover the left half of the screen */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    opacity: 0;
+    z-index: 999; /* Just below project details */
+    transition: opacity 0.5s ease;
+    pointer-events: none; /* Ensures that it doesn't block interactions */
+}
+
+.left-side-overlay.visible {
+    opacity: 1; /* Ensure overlay visibility when a project is selected */
+    pointer-events: auto; /* Make overlay interactable only when it's visible */
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.project-details .details-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
